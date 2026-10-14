@@ -1,2 +1,0 @@
-# abaygym
-gym web site
