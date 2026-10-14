@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/tailwind.js"></script>
+</head>
+<body>
+  <header class="bg-[#111315] border-b border-[#34383A]">
+  <div class="max-w-7xl mx-auto px-5 md:px-8
+              py-5 flex items-center justify-between">
+
+    <a href="index.html"
+       class="text-2xl font-extrabold tracking-tight">
+      <span class="text-[#D7FF45]">PULSE</span>
+    </a>
+
+    <input type="checkbox" id="menu-toggle"
+           class="peer hidden">
+
+    <label for="menu-toggle"
+           class="md:hidden cursor-pointer text-3xl">
+      &#9776;
+    </label>
+
+    <nav class="hidden peer-checked:flex
+                absolute top-[73px] left-0 w-full
+                bg-[#111315] border-b border-[#34383A]
+                flex-col gap-5 p-5 z-50
+                md:static md:flex md:w-auto
+                md:flex-row md:items-center
+                md:border-0 md:p-0 md:gap-8">
+
+      <a href="index.html"
+         class="text-[#D7FF45] hover:text-[#D7FF45]">
+        Home
+      </a>
+
+      <a href="memberships.html"
+         class="text-white hover:text-[#D7FF45]">
+        Memberships
+      </a>
+
+      <a href="contact.html"
+         class="text-white hover:text-[#D7FF45]">
+        Contact
+      </a>
+
+    </nav>
+  </div>
+</header>
+  
+</body>
+</html>
