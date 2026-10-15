@@ -1,55 +1,526 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="js/tailwind.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memberships</title>
+    <script src="js/tailwind.js"></script>
 </head>
-<body>
-  <header class="bg-[#111315] border-b border-[#34383A]">
-  <div class="max-w-7xl mx-auto px-5 md:px-8
+
+
+<body class="min-h-screen flex flex-col bg-[#111315] text-white">
+<header class="sticky top-0 z-50 relative bg-[#111315] border-b border-[#34383A]">
+<div class="max-w-7xl mx-auto px-5 md:px-8
               py-5 flex items-center justify-between">
 
-    <a href="index.html"
-       class="text-2xl font-extrabold tracking-tight">
-      <span class="text-[#D7FF45]">PULSE</span>
+    <a href="memberships.html" class="text-2xl font-extrabold tracking-tight">
+        <span class="text-[#D7FF45]">PULSE</span>
     </a>
 
-    <input type="checkbox" id="menu-toggle"
-           class="peer hidden">
+    <input type="checkbox" id="menu-toggle" class="peer hidden">
 
-    <label for="menu-toggle"
-           class="md:hidden cursor-pointer text-3xl">
-      &#9776;
+    <label for="menu-toggle" class="md:hidden cursor-pointer text-3xl">
+        &#9776;
     </label>
 
     <nav class="hidden peer-checked:flex
-                absolute top-[73px] left-0 w-full
+                absolute top-full left-0 w-full
                 bg-[#111315] border-b border-[#34383A]
                 flex-col gap-5 p-5 z-50
                 md:static md:flex md:w-auto
                 md:flex-row md:items-center
                 md:border-0 md:p-0 md:gap-8">
 
-      <a href="index.html"
-         class="text-[#D7FF45] hover:text-[#D7FF45]">
-        Home
-      </a>
+        <a href="index.html" class="text-white hover:text-[#D7FF45]">
+            Home
+        </a>
 
-      <a href="memberships.html"
-         class="text-white hover:text-[#D7FF45]">
-        Memberships
-      </a>
+        <a href="memberships.html" class="text-[#D7FF45] font-semibold">
+            Memberships
+        </a>
 
-      <a href="contact.html"
-         class="text-white hover:text-[#D7FF45]">
-        Contact
-      </a>
+        <a href="contact.html" class="text-white hover:text-[#D7FF45]">
+            Contact
+        </a>
 
     </nav>
-  </div>
+</div>
 </header>
-  
+
+
+
+<main class="flex-1">
+    <section id="introduction" class="bg-[#1D2023] border-b border-[#34383A]">
+        <div class="max-w-7xl mx-auto px-5 md:px-8 py-14 md:py-20">
+            <p class="text-[#D7FF45] text-sm font-semibold uppercase tracking-widest mb-4">
+                PULSE FITNESS / PROGRAMS & MEMBERSHIPS
+            </p>
+
+            <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6">
+                TRAIN YOUR <span class="text-[#D7FF45]">WAY.</span>
+            </h1>
+
+            <p class="text-[#A1A1AA] text-base md:text-lg max-w-2xl leading-relaxed mb-8">
+                Whether you're just starting your fitness journey
+                or pushing towards your next personal record,
+                we have the right training program and membership for you.
+            </p>
+
+            <a href="#training" class="inline-block bg-[#D7FF45] text-[#111315] font-bold
+                    px-7 py-3 rounded-lg hover:bg-white transition-colors">
+                Explore Programs
+            </a>
+        </div>
+    </section>
+
+    <section id="training" class="bg-[#111315] py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-5 md:px-8">
+            <div class="mb-12">
+                <p class="text-[#D7FF45] text-sm font-semibold uppercase tracking-widest mb-3">
+                    OUR PROGRAMS
+                </p>
+
+                <h2 class="text-white text-3xl md:text-5xl font-bold mb-5">
+                    FIND YOUR <span class="text-[#D7FF45]">STRENGTH.</span>
+                </h2>
+
+                <p class="text-[#A1A1AA] text-base md:text-lg max-w-2xl">
+                    Discover training programs designed for every fitness level.
+                    Choose the workout that matches your goals and lifestyle.
+                </p>
+            </div>
+
+            <div class="flex flex-wrap gap-6">
+                <article class="w-full md:w-[calc((100%-24px)/2)]
+                        lg:w-[calc((100%-72px)/4)]
+                        bg-[#1D2023] rounded-xl overflow-hidden">
+                    <img src="images/training-strength.jpg" alt="Strength training in the gym"
+                        class="w-full h-52 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-white text-xl font-bold mb-3">
+                            Strength Training
+                        </h3>
+                        <p class="text-[#A1A1AA] text-sm leading-relaxed mb-5">
+                            Build muscle, increase strength and improve
+                            your overall physical performance.
+                        </p>
+                        <p class="text-[#D7FF45] text-sm font-semibold">
+                            Free Weights · Machines
+                        </p>
+
+                    </div>
+                </article>
+
+                <!-- Cardio & Endurance -->
+                <article class="w-full md:w-[calc((100%-24px)/2)]
+                            lg:w-[calc((100%-72px)/4)]
+                            bg-[#1D2023] rounded-xl overflow-hidden">
+
+                    <img src="images/training-cardio.jpg" alt="Cardio training on a treadmill"
+                        class="w-full h-52 object-cover">
+
+                    <div class="p-6">
+
+                        <h3 class="text-white text-xl font-bold mb-3">
+                            Cardio & Endurance
+                        </h3>
+
+                        <p class="text-[#A1A1AA] text-sm leading-relaxed mb-5">
+                            Improve your stamina, cardiovascular health
+                            and endurance through effective workouts.
+                        </p>
+
+                        <p class="text-[#D7FF45] text-sm font-semibold">
+                            Treadmills · Cycling
+                        </p>
+
+                    </div>
+                </article>
+
+                <!-- Group Classes -->
+                <article class="w-full md:w-[calc((100%-24px)/2)]
+                            lg:w-[calc((100%-72px)/4)]
+                            bg-[#1D2023] rounded-xl overflow-hidden">
+
+                    <img src="images/training-group.jpg" alt="Group fitness class" class="w-full h-52 object-cover">
+
+                    <div class="p-6">
+
+                        <h3 class="text-white text-xl font-bold mb-3">
+                            Group Classes
+                        </h3>
+
+                        <p class="text-[#A1A1AA] text-sm leading-relaxed mb-5">
+                            Stay motivated and enjoy energetic training
+                            sessions with professional instructors.
+                        </p>
+
+                        <p class="text-[#D7FF45] text-sm font-semibold">
+                            HIIT · Functional Training
+                        </p>
+
+                    </div>
+                </article>
+
+                <!-- Personal Training -->
+                <article class="w-full md:w-[calc((100%-24px)/2)]
+                            lg:w-[calc((100%-72px)/4)]
+                            bg-[#1D2023] rounded-xl overflow-hidden">
+
+                    <img src="images/training-personal.jpg" alt="Personal trainer helping a client"
+                        class="w-full h-52 object-cover">
+
+                    <div class="p-6">
+
+                        <h3 class="text-white text-xl font-bold mb-3">
+                            Personal Training
+                        </h3>
+
+                        <p class="text-[#A1A1AA] text-sm leading-relaxed mb-5">
+                            Work one-on-one with a professional trainer
+                            and follow a personalized fitness plan.
+                        </p>
+
+                        <p class="text-[#D7FF45] text-sm font-semibold">
+                            Individual Coaching · Progress Tracking
+                        </p>
+
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="pricing" class="bg-[#1D2023] py-16 md:py-24">
+
+        <div class="max-w-7xl mx-auto px-5 md:px-8">
+
+            <!-- Section heading -->
+            <div class="text-center mb-12">
+
+                <p class="text-[#D7FF45] text-sm font-semibold uppercase tracking-widest mb-3">
+                    CHOOSE YOUR PLAN
+                </p>
+
+                <h2 class="text-white text-3xl md:text-5xl font-bold mb-5">
+                    MEMBERSHIP <span class="text-[#D7FF45]">PLANS.</span>
+                </h2>
+
+                <p class="text-[#A1A1AA] text-base md:text-lg max-w-2xl mx-auto">
+                    Compare our membership options and choose the plan
+                    that matches your fitness goals.
+                </p>
+
+            </div>
+
+            <!-- Comparison table -->
+            <div class="overflow-x-auto rounded-xl border border-[#34383A]">
+
+                <table class="w-full min-w-[650px] border-collapse text-left">
+
+                    <thead class="bg-[#111315]">
+
+                        <tr>
+                            <th class="p-5 text-[#A1A1AA] font-semibold">
+                                Features
+                            </th>
+
+                            <th class="p-5 text-center text-white">
+                                Basic
+                            </th>
+
+                            <th class="p-5 text-center text-[#D7FF45]">
+                                Standard
+                            </th>
+
+                            <th class="p-5 text-center text-white">
+                                Premium
+                            </th>
+                        </tr>
+
+                        <tr class="border-t border-[#34383A]">
+
+                            <th class="p-5 text-[#A1A1AA] font-normal">
+                                Monthly price
+                            </th>
+
+                            <td class="p-5 text-center text-white text-xl md:text-2xl font-bold">
+                                15,000 ₸
+                            </td>
+
+                            <td class="p-5 text-center text-[#D7FF45] text-xl md:text-2xl font-bold">
+                                25,000 ₸
+                            </td>
+
+                            <td class="p-5 text-center text-white text-xl md:text-2xl font-bold">
+                                40,000 ₸
+                            </td>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody class="bg-[#1D2023] text-[#A1A1AA]">
+
+                        <tr class="border-t border-[#34383A]">
+                            <th scope="row" class="p-5 font-medium text-white">
+                                Gym access
+                            </th>
+                            <td class="p-5 text-center text-[#D7FF45]">✓</td>
+                            <td class="p-5 text-center text-[#D7FF45]">✓</td>
+                            <td class="p-5 text-center text-[#D7FF45]">✓</td>
+                        </tr>
+
+                        <tr class="border-t border-[#34383A]">
+                            <th scope="row" class="p-5 font-medium text-white">
+                                Cardio & strength equipment
+                            </th>
+                            <td class="p-5 text-center text-[#D7FF45]">✓</td>
+                            <td class="p-5 text-center text-[#D7FF45]">✓</td>
+                            <td class="p-5 text-center text-[#D7FF45]">✓</td>
+                        </tr>
+
+                        <tr class="border-t border-[#34383A]">
+                            <th scope="row" class="p-5 font-medium text-white">
+                                Group classes
+                            </th>
+                            <td class="p-5 text-center">—</td>
+                            <td class="p-5 text-center text-[#D7FF45]">✓</td>
+                            <td class="p-5 text-center text-[#D7FF45]">✓</td>
+                        </tr>
+
+                        <tr class="border-t border-[#34383A]">
+                            <th scope="row" class="p-5 font-medium text-white">
+                                Fitness assessment
+                            </th>
+                            <td class="p-5 text-center">—</td>
+                            <td class="p-5 text-center text-[#D7FF45]">✓</td>
+                            <td class="p-5 text-center text-[#D7FF45]">✓</td>
+                        </tr>
+
+                        <tr class="border-t border-[#34383A]">
+                            <th scope="row" class="p-5 font-medium text-white">
+                                Personal training
+                            </th>
+                            <td class="p-5 text-center">—</td>
+                            <td class="p-5 text-center">—</td>
+                            <td class="p-5 text-center text-[#D7FF45]">✓</td>
+                        </tr>
+
+                        <tr class="border-t border-[#34383A]">
+                            <th scope="row" class="p-5 font-medium text-white">
+                                Personalized workout plan
+                            </th>
+                            <td class="p-5 text-center">—</td>
+                            <td class="p-5 text-center">—</td>
+                            <td class="p-5 text-center text-[#D7FF45]">✓</td>
+                        </tr>
+
+                    </tbody>
+
+                    <tfoot class="bg-[#111315]">
+
+                        <tr class="border-t border-[#34383A]">
+
+                            <td class="p-5 text-[#A1A1AA]">
+                                Select your membership
+                            </td>
+
+                            <td class="p-4 text-center">
+                                <a href="contact.html"
+                                    class="inline-block bg-[#34383A] text-white font-semibold px-4 py-3 rounded-lg hover:bg-[#D7FF45] hover:text-[#111315] transition-colors">
+                                    Choose
+                                </a>
+                            </td>
+
+                            <td class="p-4 text-center">
+                                <a href="contact.html"
+                                    class="inline-block bg-[#D7FF45] text-[#111315] font-bold px-4 py-3 rounded-lg hover:bg-white transition-colors">
+                                    Choose
+                                </a>
+                            </td>
+
+                            <td class="p-4 text-center">
+                                <a href="contact.html"
+                                    class="inline-block bg-[#34383A] text-white font-semibold px-4 py-3 rounded-lg hover:bg-[#D7FF45] hover:text-[#111315] transition-colors">
+                                    Choose
+                                </a>
+                            </td>
+
+                        </tr>
+
+                    </tfoot>
+
+                </table>
+
+            </div>
+
+            <p class="text-[#A1A1AA] text-sm text-center mt-6">
+                All prices are in KZT per month.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section id="faq" class="bg-[#111315] py-16 md:py-24">
+
+        <div class="max-w-4xl mx-auto px-5 md:px-8">
+
+            <!-- Section heading -->
+            <div class="text-center mb-12">
+
+                <p class="text-[#D7FF45] text-sm font-semibold uppercase tracking-widest mb-3">
+                    NEED MORE INFORMATION?
+                </p>
+
+                <h2 class="text-white text-3xl md:text-5xl font-bold mb-5">
+                    FREQUENTLY ASKED <span class="text-[#D7FF45]">QUESTIONS.</span>
+                </h2>
+
+                <p class="text-[#A1A1AA]">
+                    Find answers to common questions about our memberships.
+                </p>
+
+            </div>
+
+            <!-- FAQ questions -->
+            <div class="space-y-4">
+
+                <details class="group bg-[#1D2023] border border-[#34383A] rounded-xl p-6">
+
+                    <summary
+                        class="flex items-center justify-between gap-4 cursor-pointer list-none text-white font-semibold">
+                        Can I try the gym before joining?
+                        <span class="text-[#D7FF45] text-xl group-open:rotate-45 transition-transform">+</span>
+                    </summary>
+
+                    <p class="text-[#A1A1AA] mt-4 leading-relaxed">
+                        Yes! Contact our team to arrange a gym tour
+                        and learn about available trial options.
+                    </p>
+
+                </details>
+
+                <details class="group bg-[#1D2023] border border-[#34383A] rounded-xl p-6">
+
+                    <summary
+                        class="flex items-center justify-between gap-4 cursor-pointer list-none text-white font-semibold">
+                        Can I change my membership plan?
+                        <span class="text-[#D7FF45] text-xl group-open:rotate-45 transition-transform">+</span>
+                    </summary>
+
+                    <p class="text-[#A1A1AA] mt-4 leading-relaxed">
+                        Yes, you can contact our team to request
+                        a membership upgrade or change.
+                    </p>
+
+                </details>
+
+                <details class="group bg-[#1D2023] border border-[#34383A] rounded-xl p-6">
+
+                    <summary
+                        class="flex items-center justify-between gap-4 cursor-pointer list-none text-white font-semibold">
+                        Are group classes included in every plan?
+                        <span class="text-[#D7FF45] text-xl group-open:rotate-45 transition-transform">+</span>
+                    </summary>
+
+                    <p class="text-[#A1A1AA] mt-4 leading-relaxed">
+                        Group classes are included in Standard
+                        and Premium memberships.
+                    </p>
+
+                </details>
+
+                <details class="group bg-[#1D2023] border border-[#34383A] rounded-xl p-6">
+
+                    <summary
+                        class="flex items-center justify-between gap-4 cursor-pointer list-none text-white font-semibold">
+                        Do I need previous gym experience?
+                        <span class="text-[#D7FF45] text-xl group-open:rotate-45 transition-transform">+</span>
+                    </summary>
+
+                    <p class="text-[#A1A1AA] mt-4 leading-relaxed">
+                        Not at all. Our programs are suitable
+                        for beginners and experienced athletes.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="bg-[#1D2023] border-t border-[#34383A]">
+
+    <div class="max-w-7xl mx-auto px-5 md:px-8 py-12">
+
+        <div class="flex flex-col md:flex-row justify-between gap-10">
+
+            <!-- Brand -->
+            <div>
+                <h3 class="text-2xl font-extrabold">
+                    <span class="text-[#D7FF45]">PULSE</span>
+                </h3>
+
+                <p class="text-[#A1A1AA] mt-3">
+                    Train harder. Get stronger.
+                </p>
+            </div>
+
+            <!-- Navigation -->
+            <div>
+                <h4 class="font-bold mb-4 text-[#D7FF45]">Quick Links</h4>
+
+                <div class="flex flex-col gap-3 text-[#A1A1AA]">
+                    <a href="index.html" class="hover:text-[#D7FF45]">
+                        Home
+                    </a>
+
+                    <a href="memberships.html" class="hover:text-[#D7FF45]">
+                        Memberships
+                    </a>
+
+                    <a href="contact.html" class="hover:text-[#D7FF45]">
+                        Contact
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contacts -->
+            <div>
+                <h4 class="font-bold mb-4 text-[#D7FF45]">Contact Us</h4>
+
+                <div class="flex flex-col gap-3 text-[#A1A1AA]">
+                    <p>Almaty, Kazakhstan</p>
+
+                    <a href="tel:+77778502430" class="hover:text-[#D7FF45]">
+                        +7 777 850 24 30
+                    </a>
+
+                    <a href="mailto:pulse2026@gmail.com" class="hover:text-[#D7FF45]">
+                        pulse2026@gmail.com
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-[#34383A] mt-10 pt-6
+                    text-sm text-[#A1A1AA] text-center">
+            © 2026 PULSE FITNESS. All rights reserved.
+        </div>
+
+    </div>
+
+</footer>
+
 </body>
+
 </html>
