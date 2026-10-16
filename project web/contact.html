@@ -1,15 +1,258 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Новая страница</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pulse Fitness - Coaches & Contact</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>Привет! Это новая страница</h1>
-    <p>Здесь находится содержимое вашей новой страницы.</p>
-    
-    <!-- Ссылка для возврата на главную -->
-    <a href="index.html">На главную</a>
+<body class="bg-[#111315] text-[#FFFFFF] font-sans antialiased selection:bg-[#D7FF45] selection:text-[#111315]">
+
+  <!-- HEADER (Официальный из ТЗ) -->
+  <header class="sticky top-0 z-50 relative bg-[#111315] border-b border-[#34383A]">
+    <div class="max-w-7xl mx-auto px-5 md:px-8 py-5 flex items-center justify-between">
+      
+      <a href="index.html" class="text-2xl font-extrabold tracking-tight">
+        <span class="text-[#D7FF45]">PULSE</span>
+      </a>
+
+      <input type="checkbox" id="menu-toggle" class="peer hidden">
+
+      <label for="menu-toggle" class="md:hidden cursor-pointer text-3xl">
+        &#9776;
+      </label>
+
+      <nav class="hidden peer-checked:flex absolute top-full left-0 w-full bg-[#111315] border-b border-[#34383A] flex-col gap-5 p-5 z-50 md:static md:flex md:w-auto md:flex-row md:items-center md:border-0 md:p-0 md:gap-8">
+        <a href="index.html" class="text-white hover:text-[#D7FF45]">
+          Home
+        </a>
+        <a href="memberships.html" class="text-white hover:text-[#D7FF45]">
+          Memberships
+        </a>
+        <a href="contact.html" class="text-[#D7FF45] font-semibold">
+          Contact
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- SECTION 1: PAGE INTRO (Bg: #111315) -->
+    <section class="py-16 md:py-24 border-b border-[#34383A]">
+      <div class="max-w-7xl mx-auto px-5 md:px-8 text-center">
+        <h1 class="text-white text-3xl md:text-5xl font-bold mb-4">
+          MEET OUR <span class="text-[#D7FF45]">TEAM.</span>
+        </h1>
+        <p class="text-[#A1A1AA] text-base md:text-lg max-w-2xl mx-auto">
+          Expert coaches. Real results. Find the right trainer and get in touch with us to start your transformation today.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 2: OUR COACHES (Bg: #1D2023) -->
+    <section class="bg-[#1D2023] py-16 md:py-24 border-b border-[#34383A]">
+      <div class="max-w-7xl mx-auto px-5 md:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-white text-3xl md:text-5xl font-bold">
+            OUR <span class="text-[#D7FF45]">COACHES</span>
+          </h2>
+        </div>
+
+        <!-- Horizontal profiles (Grid 1/2 cols) -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          
+          <!-- Coach 1 -->
+          <div class="bg-[#111315] border border-[#34383A] rounded-xl overflow-hidden flex flex-col sm:flex-row hover:border-[#D7FF45] transition-colors">
+            <img src="images/coach-1.jpg" alt="Abylai Torken" class="w-full sm:w-1/2 h-64 sm:h-auto object-cover">
+            <div class="p-6 flex flex-col justify-between sm:w-1/2">
+              <div>
+                <span class="text-[#D7FF45] text-xs font-bold tracking-wider uppercase">Strength Coach</span>
+                <h3 class="text-white text-2xl font-bold mt-1 mb-3">Abylai Torken</h3>
+                <p class="text-[#A1A1AA] text-sm leading-relaxed">
+                  Specializes in heavy strength training, powerlifting, and custom muscle-building fitness programs.
+                </p>
+              </div>
+              <a href="#contact-form" class="mt-6 inline-block text-xs font-bold text-[#D7FF45] hover:text-white uppercase tracking-wider">Book Session &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Coach 2 -->
+          <div class="bg-[#111315] border border-[#34383A] rounded-xl overflow-hidden flex flex-col sm:flex-row hover:border-[#D7FF45] transition-colors">
+            <img src="images/coach-2.jpg" alt="Kristina Hristenko" class="w-full sm:w-1/2 h-64 sm:h-auto object-cover">
+            <div class="p-6 flex flex-col justify-between sm:w-1/2">
+              <div>
+                <span class="text-[#D7FF45] text-xs font-bold tracking-wider uppercase">Group Fitness</span>
+                <h3 class="text-white text-2xl font-bold mt-1 mb-3">Kristina Hristenko</h3>
+                <p class="text-[#A1A1AA] text-sm leading-relaxed">
+                  Leads high-intensity group classes, functional workouts, and stamina conditioning.
+                </p>
+              </div>
+              <a href="#contact-form" class="mt-6 inline-block text-xs font-bold text-[#D7FF45] hover:text-white uppercase tracking-wider">Book Session &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Coach 3 -->
+          <div class="bg-[#111315] border border-[#34383A] rounded-xl overflow-hidden flex flex-col sm:flex-row hover:border-[#D7FF45] transition-colors">
+            <img src="images/coach-3.jpg" alt="Danial Koshym" class="w-full sm:w-1/2 h-64 sm:h-auto object-cover">
+            <div class="p-6 flex flex-col justify-between sm:w-1/2">
+              <div>
+                <span class="text-[#D7FF45] text-xs font-bold tracking-wider uppercase">Cardio & Boxing</span>
+                <h3 class="text-white text-2xl font-bold mt-1 mb-3">Danial Koshym</h3>
+                <p class="text-[#A1A1AA] text-sm leading-relaxed">
+                  Expert in endurance building, combat conditioning, and high-energy HIIT workouts.
+                </p>
+              </div>
+              <a href="#contact-form" class="mt-6 inline-block text-xs font-bold text-[#D7FF45] hover:text-white uppercase tracking-wider">Book Session &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Coach 4 -->
+          <div class="bg-[#111315] border border-[#34383A] rounded-xl overflow-hidden flex flex-col sm:flex-row hover:border-[#D7FF45] transition-colors">
+            <img src="images/coach-4.jpg" alt="Gulzhan Amanbekova" class="w-full sm:w-1/2 h-64 sm:h-auto object-cover">
+            <div class="p-6 flex flex-col justify-between sm:w-1/2">
+              <div>
+                <span class="text-[#D7FF45] text-xs font-bold tracking-wider uppercase">Mobility & Rehab</span>
+                <h3 class="text-white text-2xl font-bold mt-1 mb-3">Gulzhan Amanbekova</h3>
+                <p class="text-[#A1A1AA] text-sm leading-relaxed">
+                  Focuses on mobility exercises, injury prevention, and athletic recovery protocols.
+                </p>
+              </div>
+              <a href="#contact-form" class="mt-6 inline-block text-xs font-bold text-[#D7FF45] hover:text-white uppercase tracking-wider">Book Session &rarr;</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: CONTACT FORM (Bg: #111315) -->
+    <section id="contact-form" class="py-16 md:py-24 border-b border-[#34383A]">
+      <div class="max-w-7xl mx-auto px-5 md:px-8">
+        <div class="max-w-2xl mx-auto bg-[#1D2023] p-8 md:p-10 rounded-2xl border border-[#34383A]">
+          <h2 class="text-white text-3xl font-bold text-center mb-2">
+            GET IN <span class="text-[#D7FF45]">TOUCH.</span>
+          </h2>
+          <p class="text-[#A1A1AA] text-center text-sm mb-8">Have questions or want to train with a coach? Drop us a message.</p>
+
+          <form action="#" method="POST" class="space-y-6">
+            <div>
+              <label for="name" class="block text-sm font-semibold text-white mb-2">Full name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required 
+                class="w-full bg-[#111315] border border-[#34383A] rounded-lg px-4 py-3 text-white placeholder-[#A1A1AA] focus:outline-none focus:border-[#D7FF45] transition-colors">
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm font-semibold text-white mb-2">Email address</label>
+              <input type="email" id="email" name="email" placeholder="Your email" required 
+                class="w-full bg-[#111315] border border-[#34383A] rounded-lg px-4 py-3 text-white placeholder-[#A1A1AA] focus:outline-none focus:border-[#D7FF45] transition-colors">
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-semibold text-white mb-2">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="How can we help?" required 
+                class="w-full bg-[#111315] border border-[#34383A] rounded-lg px-4 py-3 text-white placeholder-[#A1A1AA] focus:outline-none focus:border-[#D7FF45] transition-colors resize-none"></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-[#D7FF45] text-[#111315] font-bold py-3 px-7 rounded-lg hover:bg-white active:bg-white transition-colors">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: FIND US / LOCATION (Bg: #1D2023) -->
+    <section class="bg-[#1D2023] py-16 md:py-24">
+      <div class="max-w-7xl mx-auto px-5 md:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          
+          <!-- Contact Info -->
+          <div>
+            <h2 class="text-white text-3xl md:text-5xl font-bold mb-6">
+              FIND <span class="text-[#D7FF45]">US.</span>
+            </h2>
+            <p class="text-[#A1A1AA] mb-8 text-base">
+              Visit our facility or contact us through phone and email. We are open every day to help you reach your goals.
+            </p>
+
+            <div class="space-y-6 text-base">
+              <div class="flex items-start space-x-4">
+                <span class="text-[#D7FF45] font-bold">Location:</span>
+                <span class="text-white">Almaty, Kazakhstan</span>
+              </div>
+              <div class="flex items-start space-x-4">
+                <span class="text-[#D7FF45] font-bold">Phone:</span>
+                <a href="tel:+77778502430" class="text-white hover:text-[#D7FF45] transition-colors">+7 777 850 24 30</a>
+              </div>
+              <div class="flex items-start space-x-4">
+                <span class="text-[#D7FF45] font-bold">Email:</span>
+                <a href="mailto:pulse2026@gmail.com" class="text-white hover:text-[#D7FF45] transition-colors">pulse2026@gmail.com</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Location Image / Map Preview -->
+          <div class="border border-[#34383A] rounded-2xl overflow-hidden shadow-lg">
+            <img src="images/gym-location.jpg" alt="PULSE Gym Location Map" class="w-full h-80 object-cover">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER (Официальный из ТЗ) -->
+  <footer class="bg-[#1D2023] border-t border-[#34383A]">
+    <div class="max-w-7xl mx-auto px-5 md:px-8 py-12">
+      <div class="flex flex-col md:flex-row justify-between gap-10">
+        
+        <!-- Brand -->
+        <div>
+          <h3 class="text-2xl font-extrabold">
+            <span class="text-[#D7FF45]">PULSE</span>
+          </h3>
+          <p class="text-[#A1A1AA] mt-3">
+            Train harder. Get stronger.
+          </p>
+        </div>
+
+        <!-- Navigation -->
+        <div>
+          <h4 class="font-bold mb-4 text-[#D7FF45]">Quick Links</h4>
+          <div class="flex flex-col gap-3 text-[#A1A1AA]">
+            <a href="index.html" class="hover:text-[#D7FF45]">Home</a>
+            <a href="memberships.html" class="hover:text-[#D7FF45]">Memberships</a>
+            <a href="contact.html" class="hover:text-[#D7FF45]">Contact</a>
+          </div>
+        </div>
+
+        <!-- Contacts -->
+        <div>
+          <h4 class="font-bold mb-4 text-[#D7FF45]">Contact Us</h4>
+          <div class="flex flex-col gap-3 text-[#A1A1AA]">
+            <p>Almaty, Kazakhstan</p>
+            <a href="tel:+77778502430" class="hover:text-[#D7FF45]">
+              +7 777 850 24 30
+            </a>
+            <a href="mailto:pulse2026@gmail.com" class="hover:text-[#D7FF45]">
+              pulse2026@gmail.com
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="border-t border-[#34383A] mt-10 pt-6 text-sm text-[#A1A1AA] text-center">
+        &copy; 2026 PULSE FITNESS. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
