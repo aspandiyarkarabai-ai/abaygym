@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PulseHome</title>
+    <script src="../js/tailwind.js"></script>
+</head>
+<body class="bg-[#111315] text-white flex flex-col min-h-screen">
+
+  
+  <header class="bg-[#111315] border-b border-[#34383A] sticky top-0 z-50">
+    <div class=" max-w-7xl mx-auto px-5 md:px-8 py-[14px] flex items-center justify-between">
+
+      
+      <a href="index.html" class="text-2xl font-extrabold tracking-tight">
+        <span class="text-[#D7FF45]">PULSE</span>
+      </a>
+
+      
+      <input type="checkbox" id="menu-toggle" class="peer hidden">
+
+      <label for="menu-toggle" class="md:hidden cursor-pointer text-white text-3xl select-none">
+        &#9776;
+      </label>
+
+      <nav class="hidden peer-checked:flex absolute top-[73px] left-0 w-full bg-[#111315] border-b border-[#34383A] flex-col gap-5 p-5 z-50 md:static md:flex md:w-auto md:flex-row md:items-center md:border-0 md:p-0 md:gap-8">
+        <a href="index.html" class="text-[#D7FF45] font-bold">
+          Home
+        </a>
+        <a href="memberships.html" class="text-white hover:text-[#D7FF45] transition-colors">
+          Memberships
+        </a>
+        <a href="contact.html" class="text-white hover:text-[#D7FF45] transition-colors">
+          Contact
+        </a>
+        <a href="memberships.html" class="inline-block md:hidden bg-[#D7FF45] text-[#111315] text-center font-bold px-5 py-2.5 rounded-lg">
+          Join Now
+        </a>
+      </nav>
+
+      
+      <div class="hidden md:block">
+        <a href="memberships.html" class="inline-block bg-[#D7FF45] text-[#111315] font-bold px-5 py-2.5 rounded-lg hover:bg-white active:bg-white transition-colors">
+          Join Now
+        </a>
+      </div>
+
+    </div>
+  </header>
+    
+  <main class="flex-grow">
+<!-----------------------section-1------------------------->
+    <section class="bg-[#1D2023] py-16 md:py-24 border-b border-[#34383A]">
+      <div class="max-w-7xl mx-auto px-5 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        
+        <div>
+          <span class="text-[#D7FF45] font-bold text-sm tracking-widest uppercase block mb-3">
+            WELCOME TO PULSE FITNESS
+          </span>
+          <h1 class="text-white text-4xl sm:text-5xl md:text-6xl font-extrabold uppercase leading-tight mb-6">
+            PUSH YOUR <span class="text-[#D7FF45]">LIMITS.</span>
+          </h1>
+          <p class="text-[#A1A1AA] text-lg leading-relaxed mb-8 max-w-lg">
+            A place to get stronger, stay motivated and achieve your fitness goals. High-end equipment, professional coaches, and an unstoppable community.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="memberships.html" class="inline-block text-center bg-[#D7FF45] text-[#111315] font-bold px-7 py-3 rounded-lg hover:bg-white active:bg-white transition-colors">
+              Explore Memberships
+            </a>
+            <a href="#about" class="inline-flex items-center justify-center text-white font-semibold px-7 py-3 border border-[#34383A] rounded-lg hover:border-[#D7FF45] hover:text-[#D7FF45] transition-colors">
+              Discover More <span class="ml-2">→</span>
+            </a>
+          </div>
+        </div>
+
+        
+        <div class="relative">
+          <div class="rounded-2xl overflow-hidden border border-[#34383A]">
+            <img src="images/gym-hero.jpg" alt="PULSE Gym" class="w-full h-[380px] md:h-[450px] object-cover">
+          </div>
+        </div>
+
+      </div>
+    </section>
+<!------------------sectoin-2-------------------->
+    <section id="about" class="bg-[#111315] py-16 md:py-24 border-b border-[#34383A]">
+      <div class="max-w-7xl mx-auto px-5 md:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          
+          
+          <div class="order-2 lg:order-1">
+            <img src="images/gym-interior.jpg" alt="About PULSE Gym" class="w-full h-[350px] md:h-[420px] object-cover rounded-2xl border border-[#34383A]">
+          </div>
+
+          
+          <div class="order-1 lg:order-2">
+            <span class="text-[#D7FF45] font-bold text-sm tracking-widest uppercase block mb-2">
+              WHO WE ARE
+            </span>
+            <h2 class="text-white text-3xl md:text-5xl font-bold uppercase mb-6">
+              MORE THAN A <span class="text-[#D7FF45]">GYM.</span>
+            </h2>
+            <p class="text-[#A1A1AA] text-base md:text-lg mb-4 leading-relaxed">
+              PULSE FITNESS isn’t just a fitness club — it’s a culture designed for performance, recovery, and results. We provide top-tier machinery, expert athletic support, and an environment built for focus.
+            </p>
+            <p class="text-[#A1A1AA] text-base md:text-lg leading-relaxed">
+              Training, motivation, and community come together under one roof. Whether you are taking your first step or preparing for competition, we have the space for you.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!------------------sectoin-3-------------------->
+    <section class="bg-[#1D2023] py-16 md:py-24 border-b border-[#34383A]">
+      <div class="max-w-7xl mx-auto px-5 md:px-8">
+        
+        <div class="text-center mb-12">
+          <span class="text-[#D7FF45] font-bold text-sm tracking-widest uppercase block mb-2">ADVANTAGES</span>
+          <h2 class="text-white text-3xl md:text-5xl font-bold uppercase">
+            WHY CHOOSE <span class="text-[#D7FF45]">US.</span>
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!----------------card-1------------------>
+          <div class="bg-[#1D2023] border border-[#34383A] p-8 rounded-xl hover:border-[#D7FF45] transition-colors">
+            <div class="w-12 h-12 bg-[#111315] border border-[#34383A] rounded-lg flex items-center justify-center mb-6 text-[#D7FF45]">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+              </svg>
+            </div>
+            <h3 class="text-white text-xl font-bold uppercase mb-3">Equipment</h3>
+            <p class="text-[#A1A1AA] leading-relaxed">
+              State-of-the-art strength platforms, heavy free weights zone, and modern cardio technology tailored for maximum efficiency.
+            </p>
+          </div>
+
+          <!----------------card-2------------------>
+          <div class="bg-[#1D2023] border border-[#34383A] p-8 rounded-xl hover:border-[#D7FF45] transition-colors">
+            <div class="w-12 h-12 bg-[#111315] border border-[#34383A] rounded-lg flex items-center justify-center mb-6 text-[#D7FF45]">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5-3.512M9 20H4v-2a3 3 0 015-3.512M12 11a4 4 0 100-8 4 4 0 000 8zm6 0a3 3 0 100-6 3 3 0 000 6zM6 11a3 3 0 100-6 3 3 0 000 6z"></path>
+              </svg>
+            </div>
+            <h3 class="text-white text-xl font-bold uppercase mb-3">Community</h3>
+            <p class="text-[#A1A1AA] leading-relaxed">
+              Train among driven individuals and certified coaches who share your energy, support your discipline, and celebrate your wins.
+            </p>
+          </div>
+
+          <!----------------card-3------------------>
+          <div class="bg-[#1D2023] border border-[#34383A] p-8 rounded-xl hover:border-[#D7FF45] transition-colors">
+            <div class="w-12 h-12 bg-[#111315] border border-[#34383A] rounded-lg flex items-center justify-center mb-6 text-[#D7FF45]">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-white text-xl font-bold uppercase mb-3">Flexible</h3>
+            <p class="text-[#A1A1AA] leading-relaxed">
+              No hidden contracts or rigid constraints. Choose monthly, annual, or specialized training passes that fit your schedule.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!----------------section-4------------------>
+    <section class="bg-[#111315] py-16 md:py-20">
+      <div class="max-w-7xl mx-auto px-5 md:px-8">
+        <div class="bg-[#1D2023] border border-[#34383A] rounded-2xl p-8 md:p-14 text-center">
+          <h2 class="text-white text-3xl md:text-5xl font-bold uppercase mb-4">
+            READY TO <span class="text-[#D7FF45]">START?</span>
+          </h2>
+          <p class="text-[#A1A1AA] text-lg max-w-xl mx-auto mb-8">
+            Your fitness journey begins here. Take the first step towards a stronger, healthier version of yourself today.
+          </p>
+          <a href="memberships.html" class="inline-block bg-[#D7FF45] text-[#111315] font-bold px-8 py-3.5 rounded-lg hover:bg-white active:bg-white transition-colors">
+            Join PULSE
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-----------------------footer------------------------>
+  <footer class="bg-[#1D2023] border-t border-[#34383A]">
+
+    <div class="max-w-7xl mx-auto px-5 md:px-8 py-12">
+
+        <div class="flex flex-col md:flex-row justify-between gap-10">
+
+            <!-- Brand -->
+            <div>
+                <h3 class="text-2xl font-extrabold">
+                    <span class="text-[#D7FF45]">PULSE</span>
+                </h3>
+
+                <p class="text-[#A1A1AA] mt-3">
+                    Train harder. Get stronger.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="font-bold mb-4 text-[#D7FF45]">Quick Links</h4>
+
+                <div class="flex flex-col gap-3 text-[#A1A1AA]">
+                    <a href="index.html" class="hover:text-[#D7FF45]">
+                        Home
+                    </a>
+
+                    <a href="memberships.html" class="hover:text-[#D7FF45]">
+                        Memberships
+                    </a>
+
+                    <a href="contact.html" class="hover:text-[#D7FF45]">
+                        Contact
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="font-bold mb-4 text-[#D7FF45]">Contact Us</h4>
+
+                <div class="flex flex-col gap-3 text-[#A1A1AA]">
+                    <p>Almaty, Kazakhstan</p>
+
+                    <a href="tel:+77778502430" class="hover:text-[#D7FF45]">
+                        +7 777 850 24 30
+                    </a>
+
+                    <a href="mailto:pulse2026@gmail.com" class="hover:text-[#D7FF45]">
+                        pulse2026@gmail.com
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="border-t border-[#34383A] mt-10 pt-6
+                    text-sm text-[#A1A1AA] text-center">
+            © 2026 PULSE FITNESS. All rights reserved.
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
